@@ -1,0 +1,10 @@
+sphinxmark
+sphinxcontrib.blockdiag
+sphinxcontrib.nwdiag
+sphinxcontrib.seqdiag
+sphinxcontrib.actdiag
+sphinxcontrib-plantuml
+matplotlib
+numpydoc
+scipy
+sphinx_rtd_theme
