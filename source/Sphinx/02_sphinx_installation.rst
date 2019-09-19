@@ -35,6 +35,40 @@ Linux
 
     pip3 install -U sphinx
 
+.. tip::
+
+    默认pip源下载速度很慢，在安装之前最好将pip源切换回国内源
+
+    国内源::
+
+        新版ubuntu要求使用https源，要注意。
+
+        清华：https://pypi.tuna.tsinghua.edu.cn/simple
+
+        阿里云：http://mirrors.aliyun.com/pypi/simple/
+
+        中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+
+        华中理工大学：http://pypi.hustunique.com/
+
+        山东理工大学：http://pypi.sdutlinux.org/ 
+
+        豆瓣：http://pypi.douban.com/simple/
+
+    有两种方式更换源，第一种是临时修改pip源，在使用pip的时候加参数 -i *源地址*::
+        
+        pip3 install -U sphinx -i https://pypi.tuna.tsinghua.edu.cn/simple
+    
+    另外一种方式是永久修改,Linux中,修改 ~/.pip/pip.conf (没有就创建一个文件夹及文件。文件夹要加“.”，表示是隐藏文件夹)::
+
+        [global]
+        index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+        [install]
+        trusted-host=mirrors.aliyun.com
+    
+    Windows中，在user目录中创建一个pip目录，如：C:\Users\xx\pip，新建文件pip.ini。内容同上。
+
+
 安装主题
 -------------------------------
 
